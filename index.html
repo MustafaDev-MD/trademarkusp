@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <!-- Google Fonts - Loads Inter font family with multiple weights (400, 600, 700, 800, 900) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon - Small icon displayed in browser tab -->
+    <link rel="icon" type="image/png" href="./imagees/fav.webp">
+
+</head>
+
+<body>
+    <!-- Body section contains all visible content on the page -->
+
+    <!-- ============================================ -->
+    <!-- HEADER SECTION - Navigation Bar -->
+    <!-- ============================================ -->
+    <header class="header">
+        <!-- Main header container with navigation -->
+        <div class="header__container">
+            <!-- Container wrapper for header content with max-width constraint -->
+
+            <!-- Logo link - Clickable logo that navigates to homepage -->
+            <a href="./index.html" class="header__logo">
+                <img src="./imagees/logo-new-BIG.webp" alt="Trademark USP Logo" class="header__logo-image">
+            </a>
+
+            <!-- Hamburger menu button - Only visible on mobile devices -->
+            <button class="header__menu-toggle">☰</button>
+
+            <!-- Main navigation menu -->
+            <nav class="header__nav">
+                <!-- Navigation container -->
+                <ul class="header__nav-list">
+                    <!-- Unordered list containing navigation items -->
+
+                    <!-- Navigation item with dropdown menu - "Our Services" -->
+                    <li class="header__nav-item header__nav-item--dropdown">
+                        <!-- List item with dropdown functionality -->
+                        <a href="#" class="header__nav-link">
+                            <!-- Clickable navigation link -->
+                            Our Services
+                            <!-- Arrow icon that rotates on hover -->
+                            <span class="header__nav-arrow">
+                                <!-- SVG arrow icon - Rotates 180 degrees on hover -->
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+                        <!-- Dropdown menu container - Appears on hover -->
+                        <div class="header__dropdown">
+                            <!-- Dropdown panel with smooth fade-in animation -->
+                            <div class="header__dropdown-content">
+                                <!-- Dropdown content wrapper -->
+                                <h4 class="header__dropdown-title">
+                                    <!-- Dropdown section title -->
+                                    <span class="icon">📋</span> Our Services
+                                </h4>
+                                <!-- Left column of dropdown links -->
+                                <ul class="header__dropdown-list header__dropdown-col--left">
+                                    <li><a href="./trademark-registration.html">Trademark Registration</a></li>
+                                    <li><a href="./trademark-monitoring.html">Trademark Monitoring</a></li>
+                                    <li><a href="trademark-renewal.html">Trademark Renewal</a></li>
+                                    <li><a href="./Office-Action.html">Office Action Response</a></li>
+                                    <li><a href="./statement-of-use-extension.html">Filing an Extension</a></li>
+                                </ul>
+                                <!-- Right column of dropdown links -->
+                                <ul class="header__dropdown-list header__dropdown-col--right">
+                                    <li><a href="./comprehensive-search.html">Comprehensive Trademark Search</a></li>
+                                    <li><a href="./trademark-search.html">Free Trademark Search</a></li>
+                                    <li><a href="./copyright-registration.html">Copyright Registration</a></li>
+                                    <li><a href="./statement-of-use.html">Statement of Use</a></li>
+                                    <li><a href="./dmca-takedown-service.html">DMCA Takedown </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Navigation item with dropdown menu - "Resources" -->
+                    <li class="header__nav-item header__nav-item--dropdown">
+                        <!-- Second dropdown menu item -->
+                        <a href="#" class="header__nav-link">
+                            Resources
+                            <!-- Arrow icon for Resources dropdown -->
+                            <span class="header__nav-arrow">
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+                        <!-- Resources dropdown menu -->
+                        <div class="header__dropdown">
+                            <div class="header__dropdown-content">
+                                <h4 class="header__dropdown-title">
+                                    <span class="icon">📋</span>Resources
+                                </h4>
+                                <!-- Left column -->
+                                <ul class="header__dropdown-list header__dropdown-col--left">
+                                    <li><a href="./Blog.html">Blogs</a></li>
+                                </ul>
+                                <!-- Right column -->
+                                <ul class="header__dropdown-list header__dropdown-col--right">
+                                    <li><a href="./TrademarkFAQs.html">Trademark FAQS</a></li>
+                                    <li><a href="./Copyrights-FAQs.html">Copyright FAQS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Simple navigation item without dropdown - "About us" -->
+                    <li class="header__nav-item">
+                        <a href="./About-us.html" class="header__nav-link">About us</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile-only call-to-action buttons - Hidden on desktop -->
+                <div class="header__actions header__actions--mobile">
+                    <!-- Phone number link - Opens phone dialer on mobile -->
+                    <a href="tel:(650) 384-0370" class="header__button header__button--primary">(650) 384-0370</a>
+                    <!-- Registration button - Opens modal form -->
+                    <a href="#" class="header__button header__button--primary modal-trigger">Register my trademark</a>
+                </div>
+
+            </nav>
+
+            <!-- Desktop-only call-to-action buttons - Hidden on mobile -->
+            <div class="header__actions header__actions--desktop">
+                <a href="tel:(650) 384-0370" class="header__button header__button--primary">(650) 384-0370</a>
+                <a href="#" class="header__button header__button--primary modal-trigger">Register my trademark</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- HERO SECTION - Main Banner Area -->
+    <!-- ============================================ -->
+    <section class="hero">
+        <!-- Hero section with main content and image -->
+        <div class="hero__content">
+            <!-- Content wrapper for hero text -->
+            <!-- Badge/tag above main title -->
+            <p class="hero__badge">ABOUT US</p>
+            <!-- Main hero heading -->
+            <h1 class="hero__title">Get to Know Trademark USP</h1>
+            <!-- Hero description/subtitle -->
+            <p class="hero__description">
+                You have a brand and business to protect, and we can help.
+            </p>
+            <!-- Call-to-action button - Opens registration modal -->
+            <a href="#" class="hero__button modal-trigger">Register Now</a>
+        </div>
+
+        <!-- Hero image wrapper - Contains the main hero image -->
+        <div class="hero__image-wrapper">
+            <!-- Image container with gradient overlay effect -->
+            <img src="./imagees/About-us/About_us_Hero_Image.webp" alt="Trademark USP team collage" class="hero__image">
+            <!-- Hero image that overlaps into timeline section below -->
+        </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- TIMELINE SECTION - Company History -->
+    <!-- ============================================ -->
+    <section class="timeline">
+        <!-- Timeline section showing company milestones -->
+        <div class="timeline__container">
+            <!-- Container for timeline content -->
+            <!-- Timeline section heading -->
+            <h2 class="timeline__title">Trademark USP Over the Years</h2>
+
+            <!-- Timeline list container -->
+            <div class="timeline__list">
+                <!-- Container for all timeline events with vertical line -->
+
+                <!-- Timeline event 1 - Left side -->
+                <div class="timeline__item timeline__item--left">
+                    <!-- Individual timeline event positioned on left -->
+                    <div class="timeline__point"></div>
+                    <!-- Circular point marker on timeline -->
+                    <div class="timeline__content">
+                        <!-- Content card for timeline event -->
+                        <p class="timeline__date">AUGUST 2016</p>
+                        <!-- Date of the event -->
+                        <h3 class="timeline__item-title">Trademark USP was founded.</h3>
+                        <!-- Event title/heading -->
+                        <p class="timeline__description">
+                            <!-- Event description text -->
+                            An experienced team consisting of a lawyer and several technologists bring trademark filing
+                            services to consumers and small businesses.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline event 2 - Right side -->
+                <div class="timeline__item timeline__item--right">
+                    <!-- Timeline event positioned on right side -->
+                    <div class="timeline__point"></div>
+                    <div class="timeline__content">
+                        <p class="timeline__date">MAY 2020</p>
+                        <h3 class="timeline__item-title">Trademark USP launches a small business relief program.</h3>
+                        <p class="timeline__description">
+                            In the midst of the COVID-19 pandemic, we awarded $5,000 in COVID-19 relief to small
+                            businesses in need through our On Your Mark, Get Set, Thrive program.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline event 3 - Left side -->
+                <div class="timeline__item timeline__item--left">
+                    <div class="timeline__point"></div>
+                    <div class="timeline__content">
+                        <p class="timeline__date">AUGUST 2021</p>
+                        <h3 class="timeline__item-title">Trademark USP debuts in the Inc. 5000 list.</h3>
+                        <p class="timeline__description">
+                            Years of hard work and dedication to customers resulted in the inclusion of Trademark USP in
+                            the Inc. 5000 list for the first time after helping more than 100,000 customers just like
+                            you.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline event 4 - Right side -->
+                <div class="timeline__item timeline__item--right">
+                    <div class="timeline__point"></div>
+                    <div class="timeline__content">
+                        <p class="timeline__date">FEBRUARY 2022</p>
+                        <h3 class="timeline__item-title">Trademark USP hires its first CEO.</h3>
+                        <p class="timeline__description">
+                            Alan Godfrey became the company's first CEO after being hired by Trademark USP.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- MODAL SECTION - Registration Form Popup -->
+    <!-- ============================================ -->
+    <div id="modal-wrapper" class="modal">
+        <!-- Modal overlay - Dark background that covers entire screen -->
+        <div id="modal-content" class="modal__content">
+            <!-- Modal content container - The actual popup box -->
+            <!-- Close button (X) in top right corner -->
+            <span id="modal-close" class="modal__close">&times;</span>
+
+            <!-- Modal body - Contains form content -->
+            <div class="modal__body">
+                <!-- Modal header section with logo and title -->
+                <div class="modal__header">
+                    <div class="modal__logo">
+                        <!-- Logo container -->
+                        <img src="./imagees/logo-new-BIG.webp" alt="">
+                        <!-- Horizontal divider line -->
+                        <hr>
+                        <!-- Modal heading -->
+                        <h2>Start Your Trademark Application</h2>
+                        <!-- Subtitle text -->
+                        <h6 class="modal__subtitle">
+                            Submit your details and we'll help you begin your filing with the USPTO.
+                        </h6>
+                    </div>
+                </div>
+                <!-- Modal form section -->
+                <div class="modal__form">
+                    <!-- Form that submits to PHP backend -->
+                    <form method="POST" action="./modal_form.php">
+                        <!-- Name input field -->
+                        <div class="form-field">
+                            <input type="text" id="name" name="customer_full_name" placeholder="Name" required>
+                        </div>
+                        <!-- Email input field -->
+                        <div class="form-field">
+                            <input type="email" id="email" name="customer_email" placeholder="Email Address" required>
+                        </div>
+                        <!-- Phone number input field -->
+                        <div class="form-field">
+                            <input type="text" id="phoneNum2" name="customer_phone" placeholder="Phone Number" required>
+                        </div>
+                        <!-- Textarea for comments/description -->
+                        <div class="form-field">
+                            <textarea class="form-textarea"
+                                placeholder="What are you looking to protect? (e.g. Name, Logo and Slogan)"
+                                name="comment"></textarea>
+                        </div>
+                        <!-- Help link - Opens chat support -->
+                        <a href="javascript:void(0);" onclick="triggerChat();" class="form-help-link">Need help? Chat
+                            with out team!</a>
+                        <!-- Submit button container -->
+                        <div class="form-submit">
+                            <button type="submit">Get Started Now </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file - Loads at end of body for better performance -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
